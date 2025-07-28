@@ -1,9 +1,14 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import { useTodoStore } from "../stores/todo";
+const todoStore = useTodoStore();
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <center>
+    <p> HELLO N'BOOK SUD T RUK</p>
+    <p>{{ todoStore.getMessage() }}</p>
+
+  </center>
 </template>
+
+<style></style>
