@@ -5,7 +5,7 @@ const todoStore = useTodoStore();
 
 <template>
   <center>
-    <p> HELLO N'BOOK SUD T RUK</p>
+    <p> HELLO WORLD</p>
     <p>{{ todoStore.getMessage() }}</p>
 
   </center>
