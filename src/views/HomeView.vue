@@ -5,7 +5,7 @@ const todoStore = useTodoStore();
 
 <template>
   <center>
-    <p> Fix bug </p>
+    <p> Finish new feature 2nd.</p>
     <p>{{ todoStore.getMessage() }}</p>
 
   </center>
