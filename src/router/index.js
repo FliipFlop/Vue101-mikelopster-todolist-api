@@ -1,20 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import EditView from '@/views/EditView.vue'
+import TestView from '@/views/TestView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'todo-list',
       component: HomeView,
     },
     {
-      path: '/Edit/:id',
-      name: 'edit',
+      path: '/todo/:id/edit',
+      name: 'todo-edit',
       component: EditView,
-    }
+    },
+        {
+      path: '/test',
+      name: 'test',
+      component: TestView,
+    },
   ],
 })
 
